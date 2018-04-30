@@ -1,5 +1,5 @@
 {
-    "name": "shiftonelabs/laravel-cascade-deletes",
+    "name": "dgruseck/laravel-cascade-deletes",
     "description": "Adds application level cascading deletes to Eloquent Models.",
     "keywords": ["laravel", "lumen", "eloquent", "model", "cascade", "deletes"],
     "homepage": "https://github.com/shiftonelabs/laravel-cascade-deletes",
