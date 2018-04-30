@@ -64,12 +64,12 @@ trait CascadesDeletes
 
                         foreach ($children as $child) {
                             // Delete the record using the proper method.
-                            $child->$deleteMethod();
+                            $deleted += $child->$deleteMethod();
 
                             // forceDelete doesn't return anything until Laravel 5.2. Check
                             // exists property to determine if the delete was successful
                             // since that is the last thing set before delete returns.
-                            $deleted += !$child->exists;
+                             // $deleted += !$child->exists;
                         }
                     } else {
                         // Not all relationship types make sense for cascading. As an
